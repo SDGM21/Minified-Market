@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 
-function App() {
-  const [count, setCount] = useState(0);
+const App = () => {
+  
 
-  return <div className="App">xd</div>;
+  return (<div className="container"></div>);
 }
 
 export default App;
