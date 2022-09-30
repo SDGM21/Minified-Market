@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "site": "mini-market",
     "public": "./",
     "ignore": [
       "firebase.json",
