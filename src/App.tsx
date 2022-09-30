@@ -1,7 +1,10 @@
-import React from 'react';
-import './static/styles/index.scss';
+import { useState } from "react";
 
-export function App() {
-  return <div className="App"></div>;
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return <div className="App">xd</div>;
 }
 
+export default App;
