@@ -5,7 +5,7 @@
   },
   "hosting": {
     "site": "mini-market",
-    "public": "dist",
+    "public": "./dist",
     "ignore": [
       "firebase.json",
       "**/.*",
