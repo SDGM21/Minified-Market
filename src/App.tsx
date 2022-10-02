@@ -1,7 +1,4 @@
 import { useState } from "react";
-
-
-
 import {
   userAuthTypes,
   AuthProvider,
