@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import {getAuth} from "firebase/auth"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -9,8 +10,9 @@ const firebaseConfig = {
   projectId: "minified-market",
   storageBucket: "minified-market.appspot.com",
   messagingSenderId: "767570655063",
-  appId: "1:767570655063:web:e4074c4b54e937fbf67012"
+  appId: "1:767570655063:web:e4074c4b54e937fbf67012",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
