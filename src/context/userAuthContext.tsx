@@ -1,14 +1,11 @@
 import { createContext, ReactNode } from "react";
 
 export type userAuthTypes = {
-  state: boolean;
-  dispatch: any;
+  state?: boolean;
+  dispatch?: any;
 };
 
-export const userAuthContext = createContext<userAuthTypes>({
-  state: false,
-  dispatch: {},
-});
+export const userAuthContext = createContext<userAuthTypes>({});
 
 export const AuthProvider = ({
   children,
