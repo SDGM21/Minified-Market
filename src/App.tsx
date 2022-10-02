@@ -1,14 +1,22 @@
 import { useState } from "react";
-
+import {
+  userAuthTypes,
+  AuthProvider,
+  userAuthContext,
+} from "./context/userAuthContext";
+import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
-  
-
+  const [user, setUser] = useState(false);
   return (
-  <div className="container">
-    <h1>NO</h1>
-    <div style={{color:"black", border:"5px solid", display:"inline-block"}}>TESTING 2</div>
-  </div>);
-}
+    <>
+      <AuthProvider state={user} dispatch={setUser}>
+        {"HEADER"}
+        <AppRoutes />
+        {"FOOTER"}
+      </AuthProvider>
+    </>
+  );
+};
 
 export default App;
