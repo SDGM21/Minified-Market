@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { userAuthContext } from "../context/userAuthContext";
 import Home from "../pages/Home";
 
-const AppRoutes: () => JSX.Element = () => {
+const AppRoutes = () => {
   const { state } = useContext(userAuthContext);
 
   return (
@@ -16,7 +16,6 @@ const AppRoutes: () => JSX.Element = () => {
           }
         />
         <Route path="/home" element={<Home />} />
-        <Route path="/cualquiercosa" />
       </Routes>
     </>
   );
