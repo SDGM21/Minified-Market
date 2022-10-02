@@ -1,7 +1,4 @@
 import { useState } from "react";
-
-
-
 import {
   userAuthTypes,
   AuthProvider,
@@ -12,12 +9,12 @@ import { Header } from "./includes/header/Header";
 import { Footer } from "./includes/footer/Footer";
 
 const App = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   return (
     <>
       <AuthProvider state={user} dispatch={setUser}>
         <Header/>
-        <AppRoutes />
+          <AppRoutes />
         <Footer/>
       </AuthProvider>
     </>
