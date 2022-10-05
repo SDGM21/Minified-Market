@@ -10,13 +10,13 @@ const AppRoutes: () => JSX.Element = () => {
     <>
       <Routes>
         <Route
-          path="/*"
+          path="/login"
           element={
             state ? <Navigate to={"/home"} /> : <Navigate to={"/login"} />
           }
         />
         <Route path="/home" element={<Home />} />
-        <Route path="/cualquiercosa" />
+   
       </Routes>
     </>
   );
