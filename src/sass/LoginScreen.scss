@@ -1,0 +1,13 @@
+.loginCard {
+  transition: 500ms ease-out;
+  background-color: snow;
+
+  &:hover {
+    background-color: black;
+
+    .dark {
+      transition: 500ms ease-out;
+      filter: invert(100%);
+    }
+  }
+}

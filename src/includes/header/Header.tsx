@@ -10,11 +10,6 @@ import {
   Nav,
   NavLink,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from "reactstrap";
 import logo from "../../assets/react.svg";
 const NavBarStrap = () => {
@@ -33,14 +28,18 @@ const NavBarStrap = () => {
           <Nav className="me-auto" navbar>
             <NavItem>
               <NavLink>
-              <RouterNavLink to="/home">Home</RouterNavLink>
+                <RouterNavLink to="/home">Home</RouterNavLink>
               </NavLink>
             </NavItem>
             <NavItem>
-              <RouterNavLink to="/#">Where</RouterNavLink>
+              <NavLink>
+                <RouterNavLink to="/#">Where</RouterNavLink>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <RouterNavLink to="/#">About</RouterNavLink>
+              <NavLink>
+                <RouterNavLink to="/#">About</RouterNavLink>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
