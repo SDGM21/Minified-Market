@@ -15,7 +15,7 @@ const LoginCard = ({
         <img
           className={`${dark}`}
           style={{ display: "block", width: "100%" }}
-          src={"../../public/25231_adobe_express.svg"}
+          src={imgSource}
           alt={alt}
         />
       </div>

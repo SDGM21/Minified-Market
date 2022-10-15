@@ -1,11 +1,13 @@
-import { useContext } from "react";
+import { getRedirectResult } from "firebase/auth";
+import { useContext, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { userAuthContext } from "../context/userAuthContext";
+import { auth } from "../firebase/init";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 
-const AppRoutes: () => JSX.Element = () => {
-  const { state } = useContext(userAuthContext);
+const AppRoutes = () => {
+  const { state, dispatch } = useContext(userAuthContext);
 
   return (
     <>

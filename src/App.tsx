@@ -9,7 +9,7 @@ import { Header } from "./includes/header/Header";
 import { Footer } from "./includes/footer/Footer";
 
 const App = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState<any>({});
   return (
     <>
       <AuthProvider state={user} dispatch={setUser}>
